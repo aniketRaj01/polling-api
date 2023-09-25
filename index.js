@@ -13,7 +13,7 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 
 // setting up different routing file
-app.use('/', require('./routes/api/v1/index'));
+app.use('/', require('./routes/index'));
 
 // server is listening at given port
 app.listen(port, (err) => {
